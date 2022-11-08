@@ -1,0 +1,16 @@
+:root {
+    /* background-color: rgb(102, 139, 163); */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: linear-gradient(#1823bd, #890e0e);
+    color: white;
+    text-align: center;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+}

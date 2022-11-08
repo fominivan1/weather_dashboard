@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class="header">Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <section class="citySearch">
+            <h3>Search for a City:</h3>
+            <input type="text">
+            <button class="searchBtn">Search</button>
+        </section>
+
+        <section class="currentCity">
+            <div>placeholder</div>
+        </section>
+
+        <section class="forecast">
+            <h4 class="dayForecast">5-Day Forecast:</h4>
+            <div id="block1">
+                <h5>random text</h5>
+            </div>
+            <div id="block2">
+                <h5>random text</h5>
+            </div>
+            <div id="block3">
+                <h5>random text</h5>
+            </div>
+            <div id="block4">
+                <h5>random text</h5>
+            </div>
+            <div id="block5">
+                <h5>random text</h5>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
