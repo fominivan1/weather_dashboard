@@ -8,9 +8,23 @@
     background: linear-gradient(#1823bd, #890e0e);
     color: white;
     text-align: center;
+    font-size: 1.5rem;
 }
 
-.forecast {
+.blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 3px 66px;
+    border-bottom: 4px black;
+}
+
+.container {
     display: flex;
     flex-direction: row;
 }

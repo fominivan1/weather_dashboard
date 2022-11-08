@@ -17,38 +17,43 @@
 </head>
 <body>
     <header>
-        <h1 class="header">Weather Dashboard</h1>
+        <p class="header">Weather Dashboard</p>
     </header>
 
     <div class="container">
         <section class="citySearch">
-            <h3>Search for a City:</h3>
-            <input type="text">
-            <button class="searchBtn">Search</button>
+            <p>Search for a City:</p>
+            <input type="text" id="searchBox">
+            <button class="searchBtn btn btn-primary">Search</button>
         </section>
 
+        <div class="grouped">
         <section class="currentCity">
             <div>placeholder</div>
         </section>
 
         <section class="forecast">
-            <h4 class="dayForecast">5-Day Forecast:</h4>
+            <p class="dayForecast">5-Day Forecast:</p>
+            <div class="blocks">
             <div id="block1">
-                <h5>random text</h5>
+                <p>random text</p>
             </div>
             <div id="block2">
-                <h5>random text</h5>
+                <p>random text</p>
             </div>
             <div id="block3">
-                <h5>random text</h5>
+                <p>random text</p>
             </div>
             <div id="block4">
-                <h5>random text</h5>
+                <p>random text</p>
             </div>
             <div id="block5">
-                <h5>random text</h5>
+                <p>random text</p>
             </div>
+        </div>
         </section>
+
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
