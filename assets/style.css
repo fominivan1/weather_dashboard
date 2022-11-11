@@ -5,16 +5,41 @@
 }
 
 .header {
-    background: linear-gradient(#1823bd, #890e0e);
+    background: linear-gradient(#4650de, #040249);
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    padding: 14px;
 }
 
-.blocks {
+.forecast {
     display: flex;
     flex-direction: row;
 }
+
+.dayForecast {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+#cards {
+    margin-right: 15px;
+    background-color: #14112c;
+    color: white;
+    padding: 5px 30px 10px 5px;
+}
+
+.date1 {
+    font-weight: bold;
+}
+
+.chosenCity {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.currentCity
 
 .searchBtn {
     display: flex;
@@ -22,6 +47,10 @@
     margin-top: 15px;
     padding: 3px 66px;
     border-bottom: 4px black;
+}
+
+.group {
+    padding-left: 25px;
 }
 
 .container {
