@@ -27,7 +27,7 @@
     margin-right: 15px;
     background-color: #14112c;
     color: white;
-    padding: 5px 30px 10px 5px;
+    padding: 5px 35px 10px 7px;
 }
 
 .date1 {
@@ -39,14 +39,17 @@
     font-size: 30px;
 }
 
-.currentCity
+.current {
+    padding-left: 10px;
+    border: black solid 1px;
+}
 
 .searchBtn {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
     padding: 3px 66px;
-    border-bottom: 4px black;
+    cursor: grab;
 }
 
 .group {

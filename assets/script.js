@@ -25,7 +25,6 @@ function searchHandler(e){
     })
 }
 
-
 function renderResults(data){
     var getDate = moment().format('MM/DD/YYYY')
     var chosenCity = document.querySelector('.chosenCity')
@@ -34,8 +33,10 @@ function renderResults(data){
     var humid = document.querySelector('.humidity')
     var tempK = data.list[0].main.temp
     var tempF = Math.round(1.8*(tempK-273)+32)
-
+    var curCity = document.querySelector('.currentCity')
     var dayForecast = document.querySelector('.dayForecast')
+
+    curCity.classList.add('current')
 
     chosenCity.textContent = data.city.name + ` (${getDate})`
     temp.textContent = 'Temp: ' + tempF
@@ -66,3 +67,35 @@ function renderResults(data){
 }
 
 searchBtn.addEventListener('click', searchHandler)
+
+var c1Btn = document.querySelector('.city1')
+var c2Btn = document.querySelector('.city2')
+
+//     e.preventDefault()
+//     var btnName = citBtn.textContent
+
+
+//     var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${btnName}&appid=${apiKey}`
+
+//     fetch(apiUrl)
+//         .then(function(response){
+//             return response.json()
+//     })
+//         .then(function(data){
+//             renderResults(data)
+//     })
+// })
+
+function citiNames(button){
+    var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${button}&appid=${apiKey}`
+
+        fetch(apiUrl)
+            .then(function(response){
+                return response.json()
+        })
+            .then(function(data){
+                renderResults(data)
+        })
+}
+
+c1Btn.addEventListener('click', citiNames)
